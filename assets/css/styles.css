@@ -277,7 +277,7 @@ main {
   width: 50%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   main {
     text-align: left;
   }
@@ -454,6 +454,7 @@ main {
 @media (max-width: 768px) {
   .read-more {
     padding: 0 10px;
+    text-align-last: left;
   }
 }
 
@@ -494,23 +495,42 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
 
 footer * {
   max-width: 100%;
+  padding-top: 10px;
 }
 
 footer .footer-element {
   max-width: 40%;
 }
 
+footer .footer-element.footer-fb {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+footer .vertical {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
 footer img {
   max-width: 100%;
+  max-height: 50px;
+  margin-bottom: 5px;
 }
 
 footer div, footer a {
@@ -520,14 +540,6 @@ footer div, footer a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-footer div.footer-fb, footer a.footer-fb {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
 }
 
 footer .fb {
