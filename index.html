@@ -524,7 +524,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
     let introItemsY = [];
     let introItems = document.querySelectorAll('.intro-item');
     introItems.forEach((i)=>{introItemsY.push(i.getBoundingClientRect().y)});
-    console.log(introItemsY)
 
 // ------------ створюємо кнопки "Read more" для всіх елементів з відповідним класом
     document.querySelectorAll('.read-more').forEach((i)=>{ 
@@ -575,7 +574,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
             el.previousElementSibling.previousElementSibling.scrollIntoView();
             window.scrollBy(0, -20);
             setTimeout(()=>blockHeaderShow = false,1000);
-            $(el.previousElementSibling.previousElementSibling).animate({maxHeight: 0}, 50);
+            $(el.previousElementSibling.previousElementSibling).animate({maxHeight: 0}, 200);
             el.previousElementSibling.style.display = 'block';
             return;
         }
@@ -642,7 +641,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
         //show items of intro
         if (window.pageYOffset + window.innerHeight * 0.7 >= introItemsY[0])
           introItemsY.forEach((i, n)=>{
-            setTimeout(()=>$(introItems[n]).animate({left: n * 20}, 1500), 1000 * n);
+            setTimeout(()=>$(introItems[n]).animate({left: n * 20}, 1000), 1000 * n);
           })
     });
 
@@ -729,7 +728,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
             <textarea name="text" rows="5" placeholder="Ваші пропозиції до співпраці"></textarea>
           </form>`, ['Надіслати', 'Назад'], (btn)=>{
             closeWindow('modal-email');
-            if (btn == 0) sendMail ('vitaljan@gmail.com', 'IGY6', document.forms.email.text.value, 'IGY6-Ukraine', (res)=>{console.log(res)}, phpPath = 'api/')
+            if (btn == 0) sendMail ('vitaljan@gmail.com', 'IGY6', document.forms.email.text.value, 'IGY6-Ukraine', (res)=>{}, phpPath = 'api/')
           }, ()=>{}, 0, 'modal-email')
         }
       });
