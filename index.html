@@ -1,23 +1,39 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-72576334-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-72576334-3');
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta http-equiv="cache-control" content="no-cache">
 <meta http-equiv="cache-control" content="must-revalidate">
 <meta http-equiv="cache-control" content="max-age=0">
-<meta name="description" content="IGY6. Запобігання самогубствам">
+<meta name="description" content="IGY6-Ukraine. Стоп суїцид!">
 <meta name="author" content="Vitalii Kolomiiets, Kyiv, Ukraine, vitaljan@gmail.com">
-<title>IGY6</title>
+<title>IGY6-Ukraine. Стоп суїцид!</title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="assets/css/styles.css">
+<link rel="stylesheet" href="assets/plugin/explorer2.css">
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='assets/plugin/explorer2.js'></script>
+<script src='api/mysqlajax.js'></script>
 </head>
 <body>
     <header>
-        <img src="assets/img/metall.png" alt="igy6">
-        <img class="logo" src="assets/img/logo.png" alt="igy6">
+        <img src="assets/img/back.png" alt="igy6">
+        <img class="logo" src="assets/img/igy6-ukraine.png" alt="igy6">
+        <div id="support-main" class="support">
+          <img src="assets/img/support2.png" alt="">
+          <span>Підтримати проект</span>
+        </div>
         <nav>
         </nav>
         <div id='nav-smartmenu'>
@@ -29,7 +45,7 @@
 
             <div class="intro" id="about">
                 
-                <h1>Волонтерська неприбуткова місія <br><span class="igy6">I got your 6</span> ("Я захищаю твій тил") створена з метою запобігання самогубству людей.</h1>
+                <h1>Волонтерська неприбуткова місія <br><span class="igy6">I got your 6</span> ("Я захищаю твій тил") створена з метою запобігання самогубствам людей.</h1>
                 <img src="assets/img/depression.jpg" alt="" class="img-center">
                 <p></p>
                 <h2>Мета нашого проекту:</h2>
@@ -40,11 +56,11 @@
             </div>
 
             <ul class="chapter">
-                <img src="assets/img/nolimit.png" alt="" class="img-right" style="width: 10%">
-                <li>Тема самогубства була та лишається такою, про яку говорити якось не прийнято. Адже в розмовах комфортніше не згадувати подібне, аби не торкнутись чогось брудного.</li>
-                <li>Згідно інформації МОЗ України, наша країна знаходиться серед 25 країн світу з найвищим рівнем суїциду.</li>
-                <li>Чому ж люди, варті уваги, поваги та підтримки, замислюються про суїцид?</li>
-                <li>Ми будемо про це говорити. Без табу.</li>
+              <li>Тема самогубства була та лишається такою, про яку говорити якось не прийнято. Адже в розмовах комфортніше не згадувати подібне, аби не торкнутись чогось брудного.</li>
+              <li>Згідно інформації МОЗ України, наша країна знаходиться серед 25 країн світу з найвищим рівнем суїциду.</li>
+              <li>Чому ж люди, варті уваги, поваги та підтримки, замислюються про суїцид?
+              </li>
+              <li>Ми будемо про це говорити. Без табу.</li>
             </ul>
 
             <div class="chapter" id="igy6">
@@ -182,7 +198,7 @@
         </li>
         Залишайтесь на зв’язку, говоріть або слухайте. Порадьте зателефонувати  на <a href="https://lifelineukraine.com" target="blanc"title="національна, професійна лінія з питань профілактики самогубств та підтримки психічного здоров’я">гарячу лінію 7333</a> – людині у критичному стані краще за все спілкуватись зі спеціалістом. Але навіть за його відсутності, підтримати може будь-яка небайдужа людина.
         <li>
-            Скажіть прямим текстом – «Я хочу, щоб ти жив!». Саме такі слова дають надію. Саме ці слова вселяють віру, що ти потрібний на цій землі.
+            Скажіть прямим текстом – «Мені важливо, щоб ти жив!». Саме такі слова дають надію. Саме ці слова вселяють віру, що ти потрібний на цій землі.
         </li>
             Переконайтесь, що людина не має доступу до медикаментів, зброї та других речей, які можуть бути застосовані самогубцею.
     </ul>
@@ -194,7 +210,7 @@
 </div>
 
 <div class="chapter" id="iwant">
-    <h2>«Я хочу, щоб ти жив!»</h2>
+    <h2>«Важливо, щоб ти жив!»</h2>
     <ul>
         <li class="quession">
             «Соберись, тряпка!»
@@ -209,7 +225,7 @@
             -	Такі слова не надихають. Не мотивують. Відштовхують. Людина, яка наважилась на самогубство, не має ресурсів. Ані для себе, ані для інших. Сподіваюсь, після прочитання цих матеріалів, таких слів лунатиме менше.
         </li>
         <li class="quession">
-            «Я хочу, щоб ти жив!»
+            «Мені важливо, щоб ти жив!»
         </li>
         <li class="answer">
             -	Це саме ті слова, які необхідні. Які зігрівають душу та дають надію. Надію на майбутнє, якого не відчути. Надію на те, що ти комусь потрібний. Надію, якої нема. Усвідомлення, що є хтось, кому ти небайдужий. Це слова, які можуть зупинити в критичну мить. Які можуть дати віру в себе, сили та натхнення іти далі.
@@ -220,13 +236,20 @@
 <div class="chapter" id="help">
     <h2>Просити про допомогу – не соромно!</h2>
     <img src="assets/img/hands.jpg" alt="" class="img-right img-circle">
-    <p>Якщо ви замислювались хоч раз про суїцид – не зволікайте! Якщо нічого не робити, існує ймовірність, що це спаде на думку ще не раз. Якщо ви вже мали спробу суїциду та переконані, що вона не повториться – не зволікайте. Бажання суїциду може повернутись навіть попри переконання, що усе позаду.</p>
+    <p>Якщо ви замислювались про самогубство хоч один раз – це дуже тривожна ознака! Якщо бездіяти, не звертати на це уваги, існує ймовірність - це спаде на думку знов.
+    </p>
+    <p>Якщо ви вже мали спробу суїциду та переконані, що вона не повториться – слід негайно вжити заходів. Бажання суїциду може повернутись навіть попри переконання, що усе позаду.</p>
     <ul>
         <li class="answer">
-            -	завчасно домовтесь з декількома друзями або людьми, яким довіряєте та які мають змогу бути з Вами на зв’язку у будь-який час. Спитайте в них прямо – «Я можу телефонувати тобі о 3-й ночі, якщо мені буде важко та погано?» Дайте їм почитати цей матеріал. 
+          -	Завчасно домовтесь з декількома друзями або людьми, яким довіряєте та які мають змогу бути з Вами на зв’язку у будь-який час.
         </li>
         <li class="answer">
-            -	у критичний момент телефонуйте на <a href="https://lifelineukraine.com" title="національна, професійна лінія з питань профілактики самогубств та підтримки психічного здоров’я">гарячу лінію 7333</a>. Там чекають на ваш дзвінок цілодобово. Можна телефонувати другий, третій раз, скільки завгодно, доки є потреба. З вами говоритимуть ті, хто хочуть допомогти. Хочуть, щоб Ви жили.
+          - Спитайте в них прямо – «Я можу телефонувати тобі о 3-й ночі, якщо мені буде важко та погано?»
+        <li class="answer">
+          - Дайте їм почитати цей матеріал. 
+        </li>
+        <li class="answer">
+            -	у критичний момент телефонуйте на <a href="https://lifelineukraine.com" title="національна, професійна лінія з питань профілактики самогубств та підтримки психічного здоров’я">гарячу лінію 7333</a>. Там чекають на ваш дзвінок цілодобово. Можна телефонувати другий, третій раз, скільки завгодно, доки є потреба. З вами говоритимуть ті, хто хочуть допомогти. Яким важливо, щоб Ви жили.
         </li>
     </ul>
 
@@ -290,7 +313,7 @@
     <p>Хвороби бувають різними. Можна почуватись фізично здоровим, але в житті усе шкереберть. Таке захворювання, як, наприклад,  депресія, може бути смертельно небезпечним. Якщо хоч раз вам або вашим знайомим надходила думка про самогубство – час іти до лікаря.</p>
     <p>Звернувшись до психіатра, можна отримати курс медикаментозного лікування. Антидепресанти або заспокійливі або снодійні засоби. Може виникнути питання: навколо ж нічого не змінюється. Що дадуть ліки, якщо я лишаюсь у тих самих умовах, що штовхають мене до найгірших думок?</p>
     <p>Та іноді медикаментозне лікування дає можливість побачити ті самі речі іншими очима. Під іншим кутом. І вони перестають бути страшними та нестерпними. Перевірено.</p>
-    <p>До речі, рушниками до койки мене не прив’язували. На облік не ставили. Примусово в діспансер не клали.</p>
+    <p>До речі, рушниками до койки не прив’язують. На облік не ставлять. Примусово в діспансер не кладуть.</p>
     <p>Окрім іншого, звернутись можна також до приватного психіатра. Лікарів зручно шукати тут: <a class="flex-center" href="https://doc.ua/" target="blanc">
       <img src="assets/img/doc.png" alt="doc.ua"></a></p>
 
@@ -353,7 +376,7 @@
             <div class="team">
                     <img src="assets/img/vj.jpg" alt="">
                     <div class="team-text">
-                        <div class="team-think"><span>Я хочу, щоб ти жив!</span></div>
+                        <div class="team-think"><span>Мені важливо, щоб ти жив!</span></div>
                         <div>Віталій Коломієць</div>
                         <div>Автор проекту</div>
                         <div>Волонтер, web-розробник</div>
@@ -369,7 +392,7 @@
                 <div class="team">
                     <img src="assets/img/victoria.jpg" alt="">
                     <div class="team-text">
-                        <div class="team-think"><span>Я хочу, щоб ти жив!</span></div>
+                        <div class="team-think"><span>Мені важливо, щоб ти жив!</span></div>
                         <div>Вікторія Семенцул</div>
                         <div>Консультант проекту</div>
                         <div>Психотерапевт, суїцидолог</div>
@@ -382,7 +405,7 @@
                 <div class="team">
                     <img src="assets/img/valde.jpg" alt="">
                     <div class="team-text">
-                        <div class="team-think"><span>Я хочу, щоб ти жив!</span></div>
+                        <div class="team-think"><span>Мені важливо, щоб ти жив!</span></div>
                         <div>Костянтин Ульянов</div>
                         <div>Учасник проекту</div>
                         <div>Тренер, автор курсу "Броньований розум"</div>
@@ -395,7 +418,7 @@
                 <div class="team">
                     <img src="assets/img/olena.jpg" alt="">
                     <div class="team-text">
-                        <div class="team-think"><span>Я хочу, щоб ти жив!</span></div>
+                        <div class="team-think"><span>Мені важливо, щоб ти жив!</span></div>
                         <div>Олена Максименко</div>
                         <div>Учасник проекту</div>
                         <div>Журналіст, військовий медик</div>
@@ -408,7 +431,7 @@
                 <div class="team">
                     <img src="assets/img/andryj.jpg" alt="">
                     <div class="team-text">
-                        <div class="team-think"><span>Я хочу, щоб ти жив!</span></div>
+                        <div class="team-think"><span>Мені важливо, щоб ти жив!</span></div>
                         <div>Андрій Зелінський</div>
                         <div>Учасник проекту</div>
                         <div>Священик, військовий капелан</div>
@@ -431,7 +454,7 @@
                 <div class="team">
                     <img src="assets/img/jura.jpg" alt="">
                     <div class="team-text">
-                        <div class="team-think"><span>Я хочу, щоб ти жив!</span></div>
+                        <div class="team-think"><span>Мені важливо, щоб ти жив!</span></div>
                         <div>Юрій Писарчук</div>
                         <div>Учасник проекту</div>
                         <div>Ветаран, учасник "Ігор нескорених"</div>
@@ -457,24 +480,30 @@
 
     <footer>
         <div class="footer-element">
-            <a href="tel:7333">
-                <img src="assets/img/phone.gif" alt="7333 національна, професійна лінія з питань профілактики самогубств та підтримки психічного здоров’я" class="call"  title="національна, професійна лінія з питань профілактики самогубств та підтримки психічного здоров’я">
-            </a>
-            <a href="https://lifelineukraine.com" target="blanc">
-                <img src="assets/img/call.png" alt="7333 національна, професійна лінія з питань профілактики самогубств та підтримки психічного здоров’я" title="національна, професійна лінія з питань профілактики самогубств та підтримки психічного здоров’я">
+            <a class="vertical" href="tel:7333" title="національна, професійна лінія з питань профілактики самогубств та підтримки психічного здоров’я">
+                <img src="assets/img/call.png" alt="7333 гаряча лінія">
+                <span class="footer-element-text">
+                  <img src="assets/img/phone.gif" alt="7333 гаряча лінія" class="call"> Гаряча лінія
+                </span>
             </a>
         </div>
         <div class="footer-element">
           <a class="vertical" href="https://bezbroni.net/" target="blanc">
               <img src="assets/img/bb.png" alt="https://bezbroni.net/">
-              <span>Єдина база ініціатив для ветеранів</span>
+              <span class="footer-element-text">Єдина база ініціатив для ветеранів</span>
           </a>
         </div>
         <div  class="footer-element">
             <a class="vertical" href="http://facebook.com/igy6.Ukraine" target="blanc">
                 <img src="assets/img/fb.png" alt="igy6-Ukraine facebook page">
-                <span><span class="igy6">IGY6</span> в соцмережах</span>
+                <span class="footer-element-text"><span class="igy6">IGY6</span> в соцмережах</span>
             </a>
+        </div>
+        <div id="support" class="footer-element support">
+          <a class="vertical" href="">
+            <img src="assets/img/igy6.gif" alt="IGY6-Ukraine banner">
+            <span class="footer-element-text">Підтримати проект</span>
+          </a>
         </div>
     </footer>
 
@@ -590,7 +619,10 @@ document.addEventListener("DOMContentLoaded", ()=>{
         }
 
 // --------------------  scroll handler -------------------------
-    document.addEventListener('scroll', (event)=>{ 
+    document.addEventListener('scroll', (event)=>{
+
+        if (window.pageYOffset > 500) document.querySelector('#support-main').style.visibility = "visible";
+
         $(smartMenu).hide(100);
         if (window.pageYOffset > currentScroll + 200) { // hide header when scroll down > 200px
             currentScroll = window.pageYOffset;
@@ -626,7 +658,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     nav.appendChild(topMenu);
 
     // Головне меню -------------------
-    let navMenu = ['Про нас#about', 'Міфи та спростування#myth', 'Ознаки намірів#intention', 'Що робити#whatdo', 'Я хочу щоб ти жив#iwant', 'Допомога та рішення#help', 'Лікарі#psychiatrist', 'Наша команда#team'];
+    let navMenu = ['Про нас#about', 'Міфи та спростування#myth', 'Ознаки намірів#intention', 'Що робити?#whatdo', 'Важливо, щоб ти жив!#iwant', 'Рішення#help', 'Лікарі#psychiatrist', 'Наша команда#team'];
 
     // створюємо смарт меню
     let smartMenuHTML = `
@@ -661,6 +693,43 @@ document.addEventListener("DOMContentLoaded", ()=>{
             // $(smartMenu).hide(100);
             smartMenu.classList.remove('nav__smartmenu_active');
     });
+
+    document.querySelectorAll('.support').forEach((i)=>i.addEventListener('click', (event)=>{
+      event.preventDefault();
+      modalWindow('Підтримка проекту IGY6-Ukraine', `Цей проект має цінність, лише коли він доступний тим, хто цього потребує. Підтримати проект ви можете, розмістивши на своєму сайті посилання на igy6.com.ua. <br><br>
+      <div class="center">Ось html-код для вставки на ваш сайт:</div>
+      <br>
+      <code>
+        &lt;a
+          href="http://igy6.com.ua"
+          target="blanc"&gt;
+            &lt;img
+              src="http://igy6.com.ua/assets/img/igy6.gif"
+              alt="IGY6-Ukraine. Stop suicide!"&gt;
+        &lt;/a&gt;
+      </code>
+      <br><br>
+      <div class="center">
+        Наш банер:<br><br>
+        <img src='assets/img/igy6.gif'>
+        <br><br>
+        Якщо маєте інші пропозиції до співпраці- напишіть нам, натиснувши кнопку нижче.
+      </div>
+      `, ['Зрозуміло', 'Написати нам'], (btn)=>{
+        closeWindow('modal-window');
+        if (btn == 1) {
+          modalWindow('<span>Написати нам</span><img style="height: 1.5em" src="assets/img/email.png">', 
+          `
+          <form name="email">
+            <textarea name="text" rows="5" placeholder="Ваші пропозиції до співпраці"></textarea>
+          </form>`, ['Надіслати', 'Назад'], (btn)=>{
+            closeWindow('modal-email');
+            if (btn == 0) sendMail ('vitaljan@gmail.com', 'IGY6', document.forms.email.text.value, 'IGY6-Ukraine', (res)=>{console.log(res)}, phpPath = 'api/')
+          }, ()=>{}, 0, 'modal-email')
+        }
+      });
+    })
+    )
 
 }) // ----------- end DOMcontentloaded
 </script>

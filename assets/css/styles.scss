@@ -4,6 +4,7 @@ $button-text-color: 'white';
 $body_bgc: #ccccff;
 $chapter_bgc: rgb(230, 232, 238);
 $color_bold: #791c04;
+$nav_color: #b1afa6;
 $color: rgb(22, 19, 19);
 $think-color: rgb(132, 223, 132);
 $team_bgc: rgb(0, 70, 80);
@@ -64,6 +65,31 @@ $header-bgc: linear-gradient(to right, gray, white, gray);
     padding: 0px;
 }
 
+#support-main {
+  position: fixed;
+  visibility: hidden;
+  z-index: 3;
+  width: 10%;
+  left: 20px;
+  top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  color: white;
+  text-align: center;
+  font-size: 0.8em;
+  @media(max-width: 570px) {
+    font-size: 0.5em;
+    top: 100px;
+  }
+  img {
+    border-radius: 50%;
+    width: 60%;
+  }
+}
+
 nav {
     position: absolute;
     width: 100%;
@@ -81,7 +107,7 @@ nav {
         right: 0;
         font-size: 40px;
         font-weight: bold;
-        color: white;
+        color: $nav_color;
         cursor: pointer;
     }
 
@@ -90,8 +116,13 @@ nav {
         text-align: center;
         width: 100%;
         bottom: 3px;
-        @media(max-width: 992px) {
-            display: none;
+        @media(max-width: 1150px) {
+          display: none;
+        }
+        a {
+          color: $nav_color;
+          font-weight: normal;
+          box-shadow: 1px 3px 3px -4px gray;
         }
         span {
             margin: 0 10px;
@@ -217,6 +248,7 @@ body {
 
     .igy6 {
         font-family: a_stamperbold;
+        padding: 0;
     }
     
 }
@@ -224,20 +256,20 @@ body {
 header {
     position: fixed;
     display: flex;
-    align-items: center;
-
+    
     height: $header_height;
     width: 100%;
     top: 0;
     left: 0;
     background: $header-bgc;
-    z-index: 1;
+    z-index: 2;
     box-shadow: 5px 5px 5px 5px gray;
     overflow: hidden;
-
+    
     img {
-
-        &.logo {
+      
+      &.logo {
+            margin-top: 15px;
             max-width: 60%;
             max-height: 80%;
             opacity: .9;
@@ -391,6 +423,12 @@ main {
             position: relative;
             top: 3px;
             color: $color;
+            @media(max-width: 480px) {
+              font-size: 0.8em;
+            }
+            @media(max-width: 380px) {
+              font-size: 0.65em;
+            }
         }
 
         &:before {
@@ -458,6 +496,8 @@ footer {
     }
 
     background-color: $team_bgc;
+    padding-left: 10px;
+    padding-right: 10px;
     width: 100%;
     height: 150px;
     display: flex;
@@ -466,16 +506,33 @@ footer {
     
     .footer-element {
         max-width: 40%;
+        display: flex;
+        flex-direction: column;
         &.footer-fb {
           flex-direction: column;
           text-align: center;
         }
+        .call {
+          max-width: 20px;
+          margin: 0;
+          padding: 0;
+        }
+        .footer-element-text {
+          display: inline-block;
+          font-size: 0.8em;
+          color: $nav_color;
+          @media(max-width: 480px) {
+            font-size: 0.7em;
+            padding-left: 5px;
+            padding-right: 5px;
+          }
+        }
       }
 
-        .vertical {
-          flex-direction: column;
-          text-align: center;
-        }
+    .vertical {
+      flex-direction: column;
+      text-align: center;
+    }
     
     img {
         max-width: 100%;
@@ -486,7 +543,6 @@ footer {
     div, a {
         display: flex;
         align-items: center;
-
     }
 
     .fb {
@@ -538,4 +594,10 @@ footer {
         height: auto;
         margin-right: 20px;
     }
+  }
+
+textarea {
+  width: 100%!important;
+  padding: 10px;
+  border: none;
 }
