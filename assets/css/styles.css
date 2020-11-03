@@ -1,3 +1,7 @@
+html {
+  scroll-padding-top: 180px;
+}
+
 @font-face {
   font-family: 'a_stamperbold';
   src: url("../fonts/a_stamper_bold-webfont.woff2") format("woff2"), url("../fonts/a_stamper_bold-webfont.woff") format("woff"), url("../fonts/a_stamper_bold-webfont.ttf") format("truetype");
@@ -240,6 +244,8 @@ body h1, body h2 {
   text-align: center;
   color: #791c04;
   padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   font-size: 1.5em;
 }
 
@@ -270,9 +276,10 @@ body .chapter.team-chapter h2 {
   color: white;
 }
 
-body .igy6 {
+.igy6 {
   font-family: a_stamperbold;
   padding: 0;
+  color: #791c04;
 }
 
 header {
@@ -393,13 +400,30 @@ main {
 .intro {
   font-size: 1.2em;
   text-align: center;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.intro li {
+  text-align: left;
+  width: 70%;
+  margin: 30px auto;
+  position: relative;
+  left: -1000px;
+  top: 0;
   color: #791c04;
+  font-weight: bold;
+}
+
+.intro h1 {
+  margin: 50px auto;
 }
 
 .intro h2 {
   padding-bottom: 19px;
   font-size: 1.2em;
-  margin-bottom: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   text-align: center;
 }
 
@@ -433,6 +457,12 @@ main {
 
 .answer {
   margin-left: 30px;
+}
+
+.quession {
+  font-style: italic;
+  font-size: 1.1em;
+  width: 90%;
 }
 
 .team {

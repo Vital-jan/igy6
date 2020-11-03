@@ -12,6 +12,9 @@ $team_bgc: rgb(0, 70, 80);
 $header_height: 180px;
 $header-bgc: linear-gradient(to right, gray, white, gray);
 
+html {
+  scroll-padding-top: $header_height;
+}
 @font-face {
     font-family: 'a_stamperbold';
     src: url('../fonts/a_stamper_bold-webfont.woff2') format('woff2'),
@@ -217,6 +220,8 @@ body {
         text-align: center;
         color: $color_bold;
         padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
         font-size: 1.5em;
     }
 
@@ -246,11 +251,12 @@ body {
         }
     }
 
-    .igy6 {
-        font-family: a_stamperbold;
-        padding: 0;
-    }
     
+  }
+.igy6 {
+    font-family: a_stamperbold;
+    padding: 0;
+    color: $color_bold;
 }
 
 header {
@@ -352,13 +358,29 @@ main {
 }
 
 .intro {
+
     font-size: 1.2em;
     text-align: center;
-    color: $color_bold;
+    position: relative;
+    margin-bottom: 80px;
+    li {
+      text-align: left;
+      width: 70%;
+      margin: 30px auto;
+      position: relative;
+      left: -1000px;
+      top: 0;
+      color: $color_bold;
+      font-weight: bold;
+    }
+    h1 {
+      margin: 50px auto;
+    }
     h2 {
         padding-bottom: 19px;
         font-size: 1.2em;
-        margin-bottom: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
         text-align: center;
     }
 }
@@ -392,6 +414,11 @@ main {
 
 .answer {
     margin-left: 30px;
+}
+.quession {
+    font-style: italic;
+    font-size: 1.1em;
+    width: 90%;
 }
 
 .team {
