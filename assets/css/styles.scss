@@ -239,7 +239,18 @@ body {
     .chapter {
         background-color: $chapter_bgc;
         padding: 20px;
-        margin: 40px 0;
+        margin: 30px auto;
+        text-align: justify;
+        width: 50%;
+        @media (max-width: 992px) {
+            text-align: left;
+        }
+        @media (max-width: 992px) {
+            width: 85%;
+        }
+        @media (max-width: 768px) {
+            width: 100%;
+        }
 
         &.team-chapter {
             background-color: $team_bgc;
@@ -249,10 +260,24 @@ body {
                 color: white;
             }
         }
+        &.w-100 {
+          width: 100%;
+          height: auto;
+          position: relative;
+          background-color: $body_bgc;
+          margin-left: 0;
+          margin-right: 0;
+          padding: 0;
+          justify-content: center;
+          display: flex;
+          img {
+            max-width: 100%;
+            margin: 0;
+          }
+        }
     }
-
-    
   }
+
 .igy6 {
     font-family: a_stamperbold;
     padding: 0;
@@ -300,22 +325,8 @@ header {
 
 main {
     position: relative;
-    text-align: justify;
-    @media (max-width: 992px) {
-        text-align: left;
-    }
-
     margin: auto;
     margin-top: $header_height + 50;
-
-    width: 50%;
-    @media (max-width: 992px) {
-        width: 85%;
-    }
-    @media (max-width: 768px) {
-        width: 100%;
-    }
-
 } // main
 
 .center {
@@ -350,6 +361,9 @@ main {
 
 .img-center {
     max-width: 40%;
+    &.wide {
+      min-width: 75%;
+    }
 }
 
 .img-circle {
@@ -363,6 +377,16 @@ main {
     text-align: center;
     position: relative;
     margin-bottom: 80px;
+    ul {
+      margin: auto;
+      width: 50%;
+      @media (max-width: 992px) {
+        width: 85%;
+      }
+      @media (max-width: 768px) {
+          width: 100%;
+      }
+    }
     li {
       text-align: left;
       width: 70%;
@@ -379,10 +403,12 @@ main {
     h2 {
         padding-bottom: 19px;
         font-size: 1.2em;
-        margin-top: 50px;
-        margin-bottom: 50px;
+        margin: 50px auto;
         text-align: center;
-    }
+        @media (max-width: 992px) {
+          margin: 20px auto;
+        }
+      }
 }
 
 .list {

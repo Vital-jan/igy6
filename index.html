@@ -48,6 +48,7 @@
                 <h1><span class="igy6">I got your 6</span> - "Я захищаю твій тил"</h1>
                 <img src="assets/img/depression.png" alt="" class="img-center">
                 <h2>Наша мета:</h2>
+                <img src="assets/img/stop2.png" alt="" class="img-center">
                 <ul>
                   <li class="center intro-item">Запобігти самогубству</li>
                   <li class="center intro-item">Підтримати тих, кому скрутно</li>
@@ -108,9 +109,11 @@
                 Люди роблять вибір, який вважають вірним. Та не завжди бачать інші шляхи. Ми не робимо вибір замість вас. Але доводимо, що інші шляхи існують.
             </p>
 
-            <div class="center"><img src="assets/img/lite.jpg" alt="" class="img-center"></div>
-        </div>
-
+          </div>
+          
+          <div class="chapter w-100">
+            <img src="assets/img/lite.png" alt="Стоп самогубствам">
+          </div>
 
         <div class="chapter" id="myth">
             <h2>Деякі міфи та їх спростування</h2>
@@ -651,10 +654,10 @@ document.addEventListener("DOMContentLoaded", ()=>{
     navButton.classList.add('nav-smartmenu-button');
     nav.appendChild(navButton);
     navButton.addEventListener('click', (event)=>{
-        event.stopPropagation();
         navButton.classList.add('hidden');
-        $(smartMenu).show(100);
+        event.stopPropagation();
         smartMenu.classList.add('nav__smartmenu_active');
+        $(smartMenu).show(100);
         })
 
     let topMenu = document.createElement('div'); // створюємо головне меню
@@ -688,8 +691,8 @@ document.addEventListener("DOMContentLoaded", ()=>{
     smartMenu.innerHTML = smartMenuHTML;
 
     smartMenu.addEventListener('mouseleave', (event)=>{ // закриття smartmenu
+      smartMenu.classList.remove('nav__smartmenu_active');
         $(smartMenu).hide(100);
-        smartMenu.classList.remove('nav__smartmenu_active');
     });
 
     smartMenu.addEventListener('click', (event)=>{ // клік по ел-ту smartmenu

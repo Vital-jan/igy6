@@ -264,7 +264,27 @@ body .bold {
 body .chapter {
   background-color: #e6e8ee;
   padding: 20px;
-  margin: 40px 0;
+  margin: 30px auto;
+  text-align: justify;
+  width: 50%;
+}
+
+@media (max-width: 992px) {
+  body .chapter {
+    text-align: left;
+  }
+}
+
+@media (max-width: 992px) {
+  body .chapter {
+    width: 85%;
+  }
+}
+
+@media (max-width: 768px) {
+  body .chapter {
+    width: 100%;
+  }
 }
 
 body .chapter.team-chapter {
@@ -274,6 +294,27 @@ body .chapter.team-chapter {
 
 body .chapter.team-chapter h2 {
   color: white;
+}
+
+body .chapter.w-100 {
+  width: 100%;
+  height: auto;
+  position: relative;
+  background-color: #ccccff;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .chapter.w-100 img {
+  max-width: 100%;
+  margin: 0;
 }
 
 .igy6 {
@@ -322,28 +363,8 @@ header .header-text {
 
 main {
   position: relative;
-  text-align: justify;
   margin: auto;
   margin-top: 230px;
-  width: 50%;
-}
-
-@media (max-width: 992px) {
-  main {
-    text-align: left;
-  }
-}
-
-@media (max-width: 992px) {
-  main {
-    width: 85%;
-  }
-}
-
-@media (max-width: 768px) {
-  main {
-    width: 100%;
-  }
 }
 
 .center {
@@ -392,6 +413,10 @@ main {
   max-width: 40%;
 }
 
+.img-center.wide {
+  min-width: 75%;
+}
+
 .img-circle {
   border-radius: 50%;
   max-width: 40%;
@@ -402,6 +427,23 @@ main {
   text-align: center;
   position: relative;
   margin-bottom: 80px;
+}
+
+.intro ul {
+  margin: auto;
+  width: 50%;
+}
+
+@media (max-width: 992px) {
+  .intro ul {
+    width: 85%;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro ul {
+    width: 100%;
+  }
 }
 
 .intro li {
@@ -422,9 +464,14 @@ main {
 .intro h2 {
   padding-bottom: 19px;
   font-size: 1.2em;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin: 50px auto;
   text-align: center;
+}
+
+@media (max-width: 992px) {
+  .intro h2 {
+    margin: 20px auto;
+  }
 }
 
 .list li {
