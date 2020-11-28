@@ -230,6 +230,21 @@ body {
   color: #161313;
 }
 
+body .video {
+  width: 95%;
+  position: relative;
+  margin: 0 auto;
+}
+
+body .video video {
+  width: 100%;
+  height: auto;
+}
+
+body q {
+  font-variant: small-caps;
+}
+
 body p, body ul {
   margin: 20px 0;
 }
@@ -275,7 +290,7 @@ body .chapter {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1300px) {
   body .chapter {
     width: 85%;
   }
@@ -580,8 +595,17 @@ main {
   text-align: justify;
   overflow: hidden;
   margin-top: 20px;
-  padding: 0 50px;
   display: none;
+}
+
+.read-more p {
+  padding: 0 50px;
+}
+
+@media (max-width: 992px) {
+  .read-more p {
+    padding: 0 20px;
+  }
 }
 
 @media (max-width: 768px) {

@@ -206,6 +206,18 @@ body {
     background-color: $body_bgc;
     color: $color;
     
+    .video {
+      width: 95%;
+      position: relative;
+      margin: 0 auto;
+      video {
+        width: 100%;
+        height: auto;
+      }
+    }
+    q {
+      font-variant: small-caps;
+    }
     p, ul {
         margin: 20px 0;
     }
@@ -245,7 +257,7 @@ body {
         @media (max-width: 992px) {
             text-align: left;
         }
-        @media (max-width: 992px) {
+        @media (max-width: 1300px) {
             width: 85%;
         }
         @media (max-width: 768px) {
@@ -502,7 +514,12 @@ main {
     text-align: justify;
     overflow: hidden;
     margin-top: 20px;
-    padding: 0 50px;
+    p {
+      padding: 0 50px;
+      @media (max-width: 992px) {
+        padding: 0 20px;
+      }
+    }
     @media (max-width: 768px) {
         padding: 0 10px;
         text-align-last: left;

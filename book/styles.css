@@ -1,0 +1,44 @@
+body {
+  background-color: #381368;
+  color: white;
+  font-family: sans-serif;
+  font-size: 18px;
+  padding: 20px 20%;
+}
+
+body div {
+  text-align: justify;
+}
+
+body * {
+  color: white;
+}
+
+body a {
+  color: #fff4b5;
+}
+
+body li {
+  margin: 10px 0;
+}
+
+body h1 {
+  font-size: 2.5rem;
+}
+
+body h2 {
+  font-size: 1.5rem;
+}
+
+body h3 {
+  font-size: 1.3rem;
+}
+
+body li {
+  list-style-type: none;
+}
+
+body sup {
+  margin: 0 5px;
+}
+/*# sourceMappingURL=styles.css.map */
