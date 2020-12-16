@@ -1,0 +1,97 @@
+@import "colors.scss";
+
+$footer_height: 50px;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  .main-chapter {
+    background-color: $chapter_bgc;
+    color: $team_bgc;
+    padding: 20px;
+    font-size: 18px;
+  }
+  background-color: $team_bgc;
+  color: $chapter_bgc;
+  font-family: sans-serif;
+  font-size: 22px;
+  // font-family: helvetica_cyregular;
+  padding: $footer_height 20%;
+  @media (max-width: 992px) {
+    padding: $footer-height 10%;
+  }
+  @media (max-width: 768px) {
+    padding: $footer-height 10px;
+  }
+  div {
+    text-align: justify;
+    @media(max-width: 768px) {
+      text-align: left;
+    }
+  }
+  a {
+    color: rgb(255, 244, 181);
+    text-decoration: none;
+  }
+  q {
+    font-style: italic;
+  }
+  ul {
+    ul {
+      padding-left: 30px;
+      font-size: 0.8em;
+      margin: 30px 0;
+    }
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    margin: 10px 0;
+    list-style-type: none;
+  }
+  h1 {
+    font-size: 2.5rem;
+    @media (max-width: 768px) {
+      font-size: 1.5rem;
+    }
+  }
+  h2 {
+    font-size: 1.5rem;
+    @media (max-width: 768px) {
+      font-size: 1.3rem;
+    }
+    padding-left: 10px;
+  }
+  h3 {
+    font-size: 1.3rem;
+    @media (max-width: 768px) {
+      font-size: 1.1rem;
+    }
+    padding-left: 20px;
+  }
+  sup {
+    margin: 0 5px;
+  }
+}
+ #footer {
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: $footer_height;
+   background-color: black;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 20px;
+   span {
+     display: flex;
+     align-items: center;
+     img {
+       margin-left: 10px;
+     }
+   }
+ }

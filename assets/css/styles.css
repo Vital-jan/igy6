@@ -1,7 +1,3 @@
-html {
-  scroll-padding-top: 180px;
-}
-
 @font-face {
   font-family: 'a_stamperbold';
   src: url("../fonts/a_stamper_bold-webfont.woff2") format("woff2"), url("../fonts/a_stamper_bold-webfont.woff") format("woff"), url("../fonts/a_stamper_bold-webfont.ttf") format("truetype");
@@ -18,31 +14,41 @@ html {
 
 @font-face {
   font-family: 'helvetica_cybold';
-  src: url("helvetica_cy_bold-webfont.eot");
-  src: url("helvetica_cy_bold-webfont.eot?#iefix") format("embedded-opentype"), url("helvetica_cy_bold-webfont.woff2") format("woff2"), url("helvetica_cy_bold-webfont.woff") format("woff"), url("helvetica_cy_bold-webfont.ttf") format("truetype");
+  src: url("../fonts/helvetica_cy_bold-webfont.eot");
+  src: url("../fonts/helvetica_cy_bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/helvetica_cy_bold-webfont.woff2") format("woff2"), url("../fonts/helvetica_cy_bold-webfont.woff") format("woff"), url("../fonts/helvetica_cy_bold-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'helvetica_cybold_italic';
-  src: url("helvetica_cy_bold_italic-webfont.eot");
-  src: url("helvetica_cy_bold_italic-webfont.eot?#iefix") format("embedded-opentype"), url("helvetica_cy_bold_italic-webfont.woff2") format("woff2"), url("helvetica_cy_bold_italic-webfont.woff") format("woff"), url("helvetica_cy_bold_italic-webfont.ttf") format("truetype");
+  src: url("../fonts/helvetica_cy_bold_italic-webfont.eot");
+  src: url("../fonts/helvetica_cy_bold_italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/helvetica_cy_bold_italic-webfont.woff2") format("woff2"), url("../fonts/helvetica_cy_bold_italic-webfont.woff") format("woff"), url("../fonts/helvetica_cy_bold_italic-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'helvetica_cyitalic';
-  src: url("helvetica_cy_italic-webfont.eot");
-  src: url("helvetica_cy_italic-webfont.eot?#iefix") format("embedded-opentype"), url("helvetica_cy_italic-webfont.woff2") format("woff2"), url("helvetica_cy_italic-webfont.woff") format("woff"), url("helvetica_cy_italic-webfont.ttf") format("truetype");
+  src: url("../fonts/helvetica_cy_italic-webfont.eot");
+  src: url("../fonts/helvetica_cy_italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/helvetica_cy_italic-webfont.woff2") format("woff2"), url("../fonts/helvetica_cy_italic-webfont.woff") format("woff"), url("../fonts/helvetica_cy_italic-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
+.igy6 {
+  font-family: a_stamperbold;
+  padding: 0;
+  color: #791c04;
+}
+
+html {
+  scroll-padding-top: 180px;
+}
+
 * {
   margin: 0;
-  padding: 0px;
+  padding: 0;
 }
 
 #support-main {
@@ -278,27 +284,23 @@ body .bold {
 
 body .chapter {
   background-color: #e6e8ee;
-  padding: 20px;
+  color: #161313;
+  padding: 20px 25%;
   margin: 30px auto;
   text-align: justify;
-  width: 50%;
+  width: 100%;
 }
 
 @media (max-width: 992px) {
   body .chapter {
     text-align: left;
-  }
-}
-
-@media (max-width: 1300px) {
-  body .chapter {
-    width: 85%;
+    padding: 20px 10%;
   }
 }
 
 @media (max-width: 768px) {
   body .chapter {
-    width: 100%;
+    padding: 20px 10px;
   }
 }
 
@@ -308,7 +310,7 @@ body .chapter.team-chapter {
 }
 
 body .chapter.team-chapter h2 {
-  color: white;
+  color: #e6e8ee;
 }
 
 body .chapter.w-100 {
@@ -646,7 +648,7 @@ main {
 }
 
 footer {
-  background-color: #004650;
+  background-color: black;
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 10px;

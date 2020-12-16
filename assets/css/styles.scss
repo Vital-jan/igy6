@@ -1,71 +1,13 @@
-$button-color: 'olive';
-$button-border: 'white';
-$button-text-color: 'white';
-$body_bgc: #ccccff;
-$chapter_bgc: rgb(230, 232, 238);
-$color_bold: #791c04;
-$nav_color: #b1afa6;
-$color: rgb(22, 19, 19);
-$think-color: rgb(132, 223, 132);
-$team_bgc: rgb(0, 70, 80);
-
-$header_height: 180px;
-$header-bgc: linear-gradient(to right, gray, white, gray);
+@import "colors.scss";
 
 html {
   scroll-padding-top: $header_height;
-}
-@font-face {
-    font-family: 'a_stamperbold';
-    src: url('../fonts/a_stamper_bold-webfont.woff2') format('woff2'),
-         url('../fonts/a_stamper_bold-webfont.woff') format('woff'),
-         url('../fonts/a_stamper_bold-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'helvetica_cyregular';
-    src: url('../fonts/helvetica_cy-webfont.woff2') format('woff2'),
-         url('../fonts/helvetica_cy-webfont.woff') format('woff'),
-         url('../fonts/helvetica_cy-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'helvetica_cybold';
-    src: url('helvetica_cy_bold-webfont.eot');
-    src: url('helvetica_cy_bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('helvetica_cy_bold-webfont.woff2') format('woff2'),
-         url('helvetica_cy_bold-webfont.woff') format('woff'),
-         url('helvetica_cy_bold-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'helvetica_cybold_italic';
-    src: url('helvetica_cy_bold_italic-webfont.eot');
-    src: url('helvetica_cy_bold_italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('helvetica_cy_bold_italic-webfont.woff2') format('woff2'),
-         url('helvetica_cy_bold_italic-webfont.woff') format('woff'),
-         url('helvetica_cy_bold_italic-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'helvetica_cyitalic';
-    src: url('helvetica_cy_italic-webfont.eot');
-    src: url('helvetica_cy_italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('helvetica_cy_italic-webfont.woff2') format('woff2'),
-         url('helvetica_cy_italic-webfont.woff') format('woff'),
-         url('helvetica_cy_italic-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
 }
 
 * {
     // border: 1px solid red;
     margin: 0;
-    padding: 0px;
+    padding: 0;
 }
 
 #support-main {
@@ -250,18 +192,21 @@ body {
 
     .chapter {
         background-color: $chapter_bgc;
-        padding: 20px;
+        color: $chapter-color;
+        padding: 20px 25%;
         margin: 30px auto;
         text-align: justify;
-        width: 50%;
+        width: 100%;
         @media (max-width: 992px) {
             text-align: left;
+            padding: 20px 10%;
         }
         @media (max-width: 1300px) {
-            width: 85%;
+            // width: 85%;
         }
         @media (max-width: 768px) {
-            width: 100%;
+            // width: 100%;
+            padding: 20px 10px;
         }
 
         &.team-chapter {
@@ -269,7 +214,7 @@ body {
             color: $chapter_bgc;
 
             h2 {
-                color: white;
+                color: $chapter_bgc;
             }
         }
         &.w-100 {
@@ -565,7 +510,7 @@ footer {
         // padding-top: 10px;
     }
 
-    background-color: $team_bgc;
+    background-color: black;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
