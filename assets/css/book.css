@@ -57,22 +57,38 @@ body {
   padding: 50px 20%;
 }
 
-body .main-chapter {
-  background-color: #e6e8ee;
-  color: #004650;
-  padding: 20px;
-  font-size: 18px;
-}
-
 @media (max-width: 992px) {
   body {
     padding: 50px 10%;
+    font-size: 18px;
   }
 }
 
 @media (max-width: 768px) {
   body {
     padding: 50px 10px;
+  }
+}
+
+body .portrait {
+  margin-top: 20px;
+}
+
+body nav {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+body .main-chapter {
+  background-color: #e6e8ee;
+  color: #004650;
+  padding: 20px;
+  font-size: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  body .main-chapter {
+    font-size: 1.6rem;
   }
 }
 
@@ -106,6 +122,12 @@ body ul ul {
   margin: 30px 0;
 }
 
+@media (max-width: 768px) {
+  body ul ul {
+    padding-left: 10px;
+  }
+}
+
 body li {
   margin: 10px 0;
   list-style-type: none;
@@ -119,6 +141,12 @@ body h1 {
   body h1 {
     font-size: 1.5rem;
   }
+}
+
+body h1 .intro {
+  font-size: 1rem;
+  font-style: italic;
+  margin-top: 10px;
 }
 
 body h2 {
@@ -140,6 +168,7 @@ body h3 {
 @media (max-width: 768px) {
   body h3 {
     font-size: 1.1rem;
+    padding-left: 10px;
   }
 }
 
